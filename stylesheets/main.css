@@ -1,0 +1,24 @@
+.item-a {
+  grid-area: header;
+  justify-self: start;
+}
+.item-b {
+  grid-area: header;
+  justify-self: end;
+}
+.item-c {
+  grid-area: sidebar;
+}
+.item-d {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
