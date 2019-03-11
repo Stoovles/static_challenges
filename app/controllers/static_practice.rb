@@ -1,6 +1,6 @@
 require 'rack'
 
-class PersonalSite
+class StaticSite
   def self.call(env)
     case env["PATH_INFO"]
     when '/' then index
